@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact B.I.B.S</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.svg" alt="B.I.B.S Logo" />
+        <span>B.I.B.S</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="products.html">Kids</a>
+        <a href="toddlers.html">Toddlers</a>
+        <a href="employees.html">Employees</a>
+        <a class="btn" href="contact.html">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Open Menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container narrow">
+      <h1>Contact</h1>
+      <p>Have questions or want custom designs? Send us a message.</p>
+      <form class="contact-form" name="contact" method="post" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact">
+        <div class="field">
+          <label>Name</label>
+          <input type="text" name="name" required>
+        </div>
+        <div class="field">
+          <label>Email</label>
+          <input type="email" name="email" required>
+        </div>
+        <div class="field">
+          <label>Message</label>
+          <textarea name="message" rows="5" required></textarea>
+        </div>
+        <button class="btn primary" type="submit">Send</button>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>B.I.B.S</h4>
+        <p>Be Intelligent. Become Successful. Kids &amp; toddlers apparel made with purpose.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="products.html">Kids apparel</a></li>
+          <li><a href="toddlers.html">Toddlers</a></li>
+          <li><a href="products.html#graphic">Graphic tees</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="employees.html">For employees</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <small>© <span id="year"></span> B.I.B.S. All rights reserved.</small>
+    </div>
+  </footer>
+  <script src="assets/script.js" defer></script>
+</body>
+</html>
